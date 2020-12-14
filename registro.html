@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Rescata una Mascota</title>
+  <!--------------LINKS A RECURSOS---------------------->
+  <!-- LINKS A BOOTSTRAP CORE CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- LINKS A HOJA DE ESTILOS -->
+  <link href="css/reuma.css" rel="stylesheet">
+  <!-- LINK DE ESTILO DE LA LETRA - LEONARDO OMAÑA: Se decidió usar el tipo de letra Roboto de Google Font -->
+  <!-- LINKS A JAVASCRIPT REMOTO PARA LOS GRAFICOS DE INFORMACION -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+</head>
+<body class="color-fondo">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top color-poli"> <!-- INICIO MENU DE NAVEGACION - HUGO ANGULO-->
+    <div class="container">
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="adopta.html">Adopta</a>
+            <!-- LINK ADOPTA - HUGO ANGULO: Pagina en que las personas pueden ver las mascotas disponibles para adopcion-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ayuda.html">Ayuda</a>
+            <!-- LINK AYUDA - HUGO ANGULO: Pagina en que las personas pueden ver la ampliacions de las formas de ayudar-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fundaciones.html">Fundaciones</a>
+            <!-- LINK FUNDACIONES - HUGO ANGULO: Pagina en que las personas pueden ver las diferentes instituciones a las cuales pueden ayudar-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registro</a>
+            <!-- LINK REGISTRO - HUGO ANGULO: Pagina en que las personas pueden registrarse como fundacion o voluntario etc-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reuma.html">Quienes Somos?</a>
+            <!-- LINK QUIENES SOMOS - HUGO ANGULO: Pagina que describe el problema y porque decidimos hacer el proyecto-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+            <!-- LINK CONTACTO - HUGO ANGULO: Pagina en que las personas pueden llenar un formulario para consultas generales-->
+          </li>
+          <li class="nav-item">
+           <!-- BUSQUEDA -->
+           <form action="resultados_busqueda.html" class="form-inline">
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar" aria-label="Buscar">
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav><!-- FIN MENU DE NAVEGACION - HUGO ANGULO-->
+<header>  <!-- INICIO HEADER- HUGO ANGULO-->
+</header><!-- FIN HEADER- HUGO ANGULO-->
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container">
+  <h1 class="my-4 text-poli">Registro</h1><!-- TITULO DE LA PAGINA - LEONARDO OMAÑA: se creo un H1 y una clase para el titulo de cada pagina-->
+  <hr>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="breadcrumb-item active">Registro</li>
+  </ol>
+  <img class="img-fluid rounded mb-4" src="http://placekitten.com/g/1200/300" alt=""><!-- IMAGEN DESCRIPTIVA DE SECCION - HUGO ANGULO: imagen aleatoria de una servicio de internet temporal hasta elegir la imagen final-->
+  <p style="display: block; padding: 20px 0px 30px 0px;">
+    Regístrate con nosotros y forma parte de esta gran familia, solo debes escoger el perfil que te interesa.
+  </p>
+  <!-- INICIO FORMULARIO REGISTRO: Usado para registro de usaurios interesado en multiples perfiles, adoptantes, donantes, fundaciones-->
+  <form action="registro.php">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputNombre4">Nombre</label>
+        <input type="text" class="form-control" id="inputNombre4" placeholder="Nombre">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputApellido4">Apellido</label>
+        <input type="text" class="form-control" id="inputApellido4" placeholder="Apellido">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputNombre4">Email</label>
+        <input type="text" class="form-control" id="inputNombre41" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputApellido4">Teléfono</label>
+        <input type="text" class="form-control" id="inputApellido41" placeholder="Telefono">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Ciudad</label>
+        <input type="text" class="form-control" id="inputCity"  placeholder="Ciudad">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputState">Perfil</label>
+        <span class="form-group col-md-6">
+          <select name="inputState" class="form-control" id="inputState">
+            <option selected>Escoger...</option>
+            <option>Quiero adoptar</option>
+            <option>Quiero Apadrinar</option>
+            <option>Hogar de paso</option>
+            <option>Donación monetaria</option>
+            <option>Donar ropa y juguetes</option>
+            <option>Donar comida</option>
+            <option>Quiero ser voluntario</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Por que quieres ser parte de nuestra familia?</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary color-poli">Regístrate</button>
+    <!-- BOTON: con funionalidad de enviar a registro_exitoso.html al hacer click-->
+  </form>
+  <!-- FIN FORMULARIO REGISTRO: Usado para registro de usaurios interesado en multiples perfiles, adoptantes, donantes, fundaciones-->
+  <hr>
+  <div class="row"><!-- INICIO SECCION MAS INFORMACION - LEONARDO OMAÑA : seccion para agregar informacion general para complementar el contenido principal de la pagina en la que se encuentra, se hizo para texto e imagenes o graficas en una proporcion 70/30-->
+    <div class="col-lg-8 text-poli"><!-- TEXTO DUMMY - LEONARDO OMAÑA: se creo una lista, un h2 y se inserto una imagen aleatoria de un servicio en linea-->
+      <h2>Que es rescata una mascota ?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt.</p>
+      <ul>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+        <li>Item de lista</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+    </div>
+    <div class="col-lg-4">
+      <img src="http://placekitten.com/g/350/280" /><!-- IMAGEN ALEATORIA COMO PLACEHOLDER - LEONARDO OMAÑA -->
+    </div>
+  </div>
+  <!-- FIN SECCION MAS INFORMACION - LEONARDO OMAÑA : seccion para agregar informacion general para complementar el contenido principal de la pagina en la que se encuentra, se hizo para texto e imagenes o graficas en una proporcion 70/30-->
+  <hr>
+  <!-- INICIO LLAMADO A LA ACCION CTA- LEONARDO OMAÑA : Se creó un link a la sección de contáctenos y se agregó un tag "p" para que la persona quiera preguntar mas cosas-->
+  <div class="row mb-4">
+    <div class="col-md-8 text-poli">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+    </div>
+    <div class="col-md-4">
+      <a class="btn btn-lg btn-secondary btn-block color-poli-secundario" href="contacto.html">Contáctanos</a>
+    </div>
+  </div>
+  <!-- FIN LLAMADO A LA ACCION CTA- LEONARDO OMAÑA : Usado para motivar a las personas a realizar una accion importante, en este caso Adoptar-->
+</div>
+<!-- INICIO FOOTER - HUGO ANGULO: Utilizado para incluir links de navegación, enlaces de interés, copyright o botones a las redes sociales del sitio.-->
+<footer class="py-5 bg-dark color-poli">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Rescata una Mascota</p>
+  </div>
+</footer>
+<!-- FIN FOOTER - HUGO ANGULO: Utilizado para incluir links de navegación, enlaces de interés, copyright o botones a las redes sociales del sitio.-->
+<!-- LINKS RECURSOS DE JAVASCRIPT DE BOOTSTRAP -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>new Chart(document.getElementById("chartjs-4"),{"type":"doughnut","data":{"labels":["Perros","Otros","Gatos"],"datasets":[{"label":"My First Dataset","data":[300,50,100],"backgroundColor":["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)"]}]}});</script>
+</body>
+</html>
