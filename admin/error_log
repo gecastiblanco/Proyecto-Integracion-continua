@@ -1,0 +1,2 @@
+[02-Jul-2019 04:20:15 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'poligran'@'localhost' (using password: NO) in /home/lechauvesec911/public_html/rescataunamascota.com/admin/login.php on line 3
+[02-Jul-2019 04:20:15 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/lechauvesec911/public_html/rescataunamascota.com/admin/login.php on line 3
